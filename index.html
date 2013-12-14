@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" manifest="manifest.appcache"> <!-- having manifest.appcache file makes it available offline -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+<title>Stressman Soundboard</title>
+<meta name="apple-mobile-web-app-capable" content="yes"> <!-- this makes start the bookmark on ios in fullscreen mode -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black"> <!-- this fixes an ios 7 bug, otherwise the statusbar is unreadable -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/touch/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="res/drawable-hdpi/ic_launcher.png">
+<link rel="apple-touch-icon-precomposed" href="res/drawable-hdpi/ic_launcher.png">
+<link rel="shortcut icon" href="res/drawable-hdpi/ic_launcher.png">
+<style>
+body {
+ margin:0;padding:0;
+ background-image:url('res/drawable/background.png');
+ background-size: 100% auto;
+ font-family: arial,sans-serif;
+}
+h1 {
+ width: 88%;
+ background-color: rgba(255,255,255,0.1);
+ font-size: 140%;
+ color: #cacbcb;
+ padding:6%;
+ margin-bottom: 12%;
+}
+button {
+ width: 86%;
+ background-color: rgba(255,255,255,0.2);
+ border:0;
+ margin:1% 7%;
+ padding: 4.5% 10%;
+ color: white;
+ font-size: 120%;
+ font-weight: bold;
+}
+</style>
+</head>
+<body>
+<h1>Stressman Soundboard</h1>
+<button onclick="new Audio('res/raw/telaat.wav').play()">We zijn te laat!</button>
+<button onclick="new Audio('res/raw/plaats.wav').play();">Daar is plaats!</button>
+<button onclick="new Audio('res/raw/egoist.wav').play();">Egoist!</button>
+<button onclick="new Audio('res/raw/wegpiraat.wav').play();">Wegpiraat!</button>
+<button onclick="new Audio('res/raw/hoeveel.wav').play();">Hoeveel?</button>
+<button onclick="new Audio('res/raw/neneuro.wav').play();">Hier, nen Euro!</button>
+<button onclick="new Audio('res/raw/aaahhh.wav').play();">AAAAAHHHH!</button>
+</body>
+</html>
